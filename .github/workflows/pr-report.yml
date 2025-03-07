@@ -41,4 +41,4 @@ jobs:
       - name: Trivy Scan and Report to PR
         uses: domstolene/trivy-pr-report@v1
         with:
-          github_token: $
+          github_token: ${{ secrets.GITHUB_TOKEN }}
