@@ -4,6 +4,7 @@ const cookieParser = require("cookie-parser");
 const lodash = require("lodash"); // Package with a known vulnerability (CVE-2019-10744)
 const app = express();
 
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 

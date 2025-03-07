@@ -10,6 +10,10 @@ permissions:
   contents: write
   pull-requests: write
 
+permissions:
+  contents: write
+  pull-requests: write
+  
 jobs:
   build:
     name: Build
@@ -42,4 +46,4 @@ jobs:
       - name: Trivy Scan and Report to PR
         uses: domstolene/trivy-pr-report@v1
         with:
-          github_token: $
+          github_token: ${{ secrets.GITHUB_TOKEN }}
